@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rejoindre le réseau — Force & Douceur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--rose:#D4537E;--rose-light:#FBEAF0;--sage:#4A7C2A;--sage-light:#EAF3DE;--cream:#FAF7F2;--warm:#F5EDE3;--dark:#1C1C1A;--muted:#888780;--border:#EDE8E3}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--dark);text-decoration:none}
+.nav-logo span{color:var(--rose)}
+.hero{padding:140px 40px 80px;text-align:center;max-width:700px;margin:0 auto}
+.eyebrow{font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--rose);margin-bottom:16px}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5vw,64px);font-weight:400;line-height:1.1;color:var(--dark);margin-bottom:20px}
+h1 em{font-style:italic;color:var(--rose)}
+.sub{font-size:16px;color:var(--muted);line-height:1.75;margin-bottom:48px}
+.form-section{max-width:640px;margin:0 auto;padding:0 40px 100px}
+.form-card{background:#fff;border-radius:20px;padding:40px;border:1px solid var(--border)}
+.field{margin-bottom:20px}
+label{display:block;font-size:13px;font-weight:500;color:var(--dark);margin-bottom:8px}
+input,select,textarea{width:100%;border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-family:'DM Sans',sans-serif;font-size:14px;outline:none;background:#fff;color:var(--dark);transition:border 0.2s}
+input:focus,select:focus,textarea:focus{border-color:var(--rose)}
+textarea{min-height:120px;resize:vertical;line-height:1.6}
+.check-group{display:flex;flex-direction:column;gap:8px}
+.check-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--cream);border-radius:10px;border:1px solid var(--border);cursor:pointer;font-size:13px;color:var(--dark)}
+.check-item input{width:16px;height:16px;margin:0;flex-shrink:0;accent-color:var(--rose)}
+.btn-primary{background:var(--rose);color:#fff;border:none;border-radius:30px;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;width:100%;margin-top:8px;transition:opacity 0.2s}
+.btn-primary:hover{opacity:0.88}
+.avantages{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px;max-width:900px;margin-left:auto;margin-right:auto;padding:0 40px}
+.avantage{background:#fff;border-radius:16px;padding:24px;border:1px solid var(--border);text-align:center}
+.av-icon{font-size:32px;margin-bottom:12px}
+.av-title{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--dark);margin-bottom:6px}
+.av-desc{font-size:13px;color:var(--muted);line-height:1.6}
+@media(max-width:768px){nav{padding:0 20px}.hero{padding:100px 20px 60px}.form-section,.avantages{padding:0 20px 60px}.avantages{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">Force <span>&</span> Douceur</a>
+</nav>
+<div class="hero">
+  <div class="eyebrow">Rejoindre le réseau</div>
+  <h1>Vous accompagnez des femmes <em>en PMA ?</em></h1>
+  <p class="sub">Rejoignez le premier annuaire de professionnels spécialisés PMA en France. Listing gratuit pendant 3 mois.</p>
+</div>
+<div class="avantages">
+  <div class="avantage"><div class="av-icon">🌿</div><h3 class="av-title">Gratuit 3 mois</h3><p class="av-desc">Listing complet sans engagement pendant 3 mois. Puis 29€/mois si vous souhaitez continuer.</p></div>
+  <div class="avantage"><div class="av-icon">👩‍⚕️</div><h3 class="av-title">Profil complet</h3><p class="av-desc">Vos spécialités, étapes PMA, mode de consultation et tarifs visibles par toutes les utilisatrices.</p></div>
+  <div class="avantage"><div class="av-icon">🌸</div><h3 class="av-title">Mise en relation</h3><p class="av-desc">Les femmes en parcours PMA vous trouvent directement selon leur étape et leurs besoins.</p></div>
+</div>
+<div class="form-section">
+  <div class="form-card">
+    <div class="field"><label>Prénom et nom *</label><input type="text" placeholder="Marie Dupont"></div>
+    <div class="field">
+      <label>Type de professionnel *</label>
+      <select>
+        <option value="">Choisissez...</option>
+        <option>Psychologue spécialisé(e) PMA</option>
+        <option>Sophrologue fertilité</option>
+        <option>Doula périnatale</option>
+        <option>Ostéopathe spécialisé(e)</option>
+        <option>Acupuncteur / Acupunctrice</option>
+        <option>Coach PMA certifié(e)</option>
+        <option>Autre accompagnant(e)</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Étapes PMA que vous accompagnez *</label>
+      <div class="check-group">
+        <label class="check-item"><input type="checkbox"> Stimulation ovarienne</label>
+        <label class="check-item"><input type="checkbox"> Transfert embryonnaire</label>
+        <label class="check-item"><input type="checkbox"> Période d'attente</label>
+        <label class="check-item"><input type="checkbox"> Après un échec / deuil périnatal</label>
+        <label class="check-item"><input type="checkbox"> Néonatologie / naissance prématurée</label>
+        <label class="check-item"><input type="checkbox"> Post-parcours / reconstruction</label>
+      </div>
+    </div>
+    <div class="field">
+      <label>Mode de consultation *</label>
+      <select>
+        <option>Téléconsultation uniquement</option>
+        <option>Présentiel uniquement</option>
+        <option>Les deux</option>
+      </select>
+    </div>
+    <div class="field"><label>Tarif par séance *</label><input type="text" placeholder="Ex : 60€ / séance de 50 minutes"></div>
+    <div class="field"><label>Ville et région *</label><input type="text" placeholder="Ex : Marseille — PACA"></div>
+    <div class="field"><label>Votre bio professionnelle * (100-150 mots)</label><textarea placeholder="Présentez-vous : votre spécialité, votre approche, ce qui vous a amené(e) à accompagner des femmes en PMA..."></textarea></div>
+    <div class="field"><label>Email de contact *</label><input type="email" placeholder="votre@email.pro"></div>
+    <div class="field"><label>Site web ou Instagram (optionnel)</label><input type="url" placeholder="https://..."></div>
+    <button class="btn-primary">Soumettre ma candidature →</button>
+    <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:12px">Chaque profil est vérifié personnellement par Kris avant publication.</p>
+  </div>
+</div>
+</body>
+</html>
