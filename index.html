@@ -612,10 +612,7 @@ async function submitFemme() {
   if(!email.includes('@') || !prenom) { alert('Merci de remplir ton prénom et email.'); return; }
   const btn = document.querySelector('#form-femme .submit-btn');
   btn.disabled = true; btn.textContent = 'Envoi...';
-  const ok = await supaInsert('emails_capture', {
-    email, prenom, source: 'hero_femme',
-    etape_parcours: document.getElementById('f-etape').value || null
-  });
+  const ok = await supaInsert('emails_capture', {email, prenom, source: 'hero_femme'});
   if(ok) {
     document.getElementById('success-femme').style.display = 'block';
     btn.style.display = 'none';
@@ -643,12 +640,7 @@ async function submitModalFemme() {
   if(!email.includes('@') || !prenom) { alert('Merci de remplir ton prénom et email.'); return; }
   const btn = document.querySelector('#mform-femme .modal-submit');
   btn.disabled = true; btn.textContent = 'Envoi...';
-  const ok = await supaInsert('emails_capture', {
-    email,
-    prenom,
-    source: 'modal_femme_' + (document.getElementById('mf-source').value.trim() || 'direct'),
-    etape_parcours: document.getElementById('mf-etape').value || null
-  });
+  const ok = await supaInsert('emails_capture', {email, prenom, source: 'modal_femme_' + (document.getElementById('mf-source').value.trim() || 'direct')});
   if(ok) {
     document.getElementById('mform-femme').style.display = 'none';
     document.getElementById('msuccess-femme').style.display = 'block';
