@@ -3,36 +3,202 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mentions légales — Force & Douceur</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<title>Politique de confidentialité — Force & Douceur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--rose:#D4537E;--cream:#FAF7F2;--dark:#1C1C1A;--muted:#888780;--border:#EDE8E3}
+:root{--rose:#C94B78;--ink:#16140F;--ink60:#645F55;--cream:#FDFAF6;--warm:#F7F0E8;--border:rgba(22,20,15,0.08)}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark)}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 40px;height:64px;display:flex;align-items:center}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--dark);text-decoration:none}
-.nav-logo span{color:var(--rose)}
-.content{max-width:740px;margin:0 auto;padding:120px 40px 80px}
-h1{font-family:'Cormorant Garamond',serif;font-size:48px;color:var(--dark);margin-bottom:40px}
-h2{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--dark);margin:32px 0 12px}
-p{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:12px}
-a{color:var(--rose)}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--ink);line-height:1.7}
+.nav{padding:0 clamp(20px,5vw,60px);height:64px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);background:rgba(253,250,246,0.95);position:sticky;top:0;backdrop-filter:blur(12px)}
+.logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:500;text-decoration:none;color:var(--ink)}
+.logo span{color:var(--rose)}
+.back{font-size:13px;color:var(--rose);text-decoration:none;font-weight:500}
+.back:hover{text-decoration:underline}
+.hero{background:var(--rose);padding:clamp(48px,8vw,80px) clamp(20px,5vw,60px);text-align:center}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,48px);color:#fff;font-weight:400;margin-bottom:12px}
+.hero p{font-size:15px;color:rgba(255,255,255,0.75);max-width:540px;margin:0 auto}
+.container{max-width:760px;margin:0 auto;padding:clamp(40px,6vw,80px) clamp(20px,5vw,40px)}
+.update{background:var(--warm);border-radius:12px;padding:14px 18px;font-size:13px;color:var(--ink60);margin-bottom:40px;display:flex;align-items:center;gap:8px}
+.section{margin-bottom:40px}
+.section h2{font-family:'Playfair Display',serif;font-size:22px;color:var(--ink);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--rose)}
+.section p{font-size:15px;color:var(--ink60);margin-bottom:12px}
+.section ul{padding-left:20px;margin-bottom:12px}
+.section ul li{font-size:15px;color:var(--ink60);margin-bottom:6px}
+.highlight{background:#FDF0F5;border-left:3px solid var(--rose);padding:14px 18px;border-radius:0 10px 10px 0;font-size:14px;color:var(--ink);margin:16px 0}
+.highlight strong{color:var(--rose)}
+.alert{background:#FEF3C7;border-left:3px solid #D08020;padding:14px 18px;border-radius:0 10px 10px 0;font-size:14px;color:var(--ink);margin:16px 0}
+.contact-box{background:var(--rose);border-radius:20px;padding:32px;text-align:center;margin-top:48px}
+.contact-box h3{font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin-bottom:8px}
+.contact-box p{font-size:14px;color:rgba(255,255,255,0.8);margin-bottom:16px}
+.contact-box a{display:inline-block;background:#fff;color:var(--rose);padding:11px 24px;border-radius:100px;font-size:14px;font-weight:600;text-decoration:none}
+.footer{text-align:center;padding:32px;font-size:13px;color:var(--ink60);border-top:1px solid var(--border)}
+.tag{display:inline-flex;align-items:center;gap:4px;background:#FDF0F5;color:var(--rose);padding:3px 10px;border-radius:100px;font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:8px}
 </style>
 </head>
 <body>
-<nav><a href="/" class="nav-logo">Force <span>&</span> Douceur</a></nav>
-<div class="content">
-<h1>Mentions légales</h1>
-<h2>Éditeur du site</h2>
-<p>Force & Douceur — forcedouceur.com<br>Responsable de publication : Kris DAMAYANTI<br>Aubagne — 13400 — France<br>Email : contact@forcedouceur.com<br>Instagram : @force_douceur</p>
-<h2>Hébergement</h2>
-<p>Ce site est hébergé par Vercel Inc., 340 Pine Street Suite 701, San Francisco, California 94104, États-Unis.</p>
-<h2>Propriété intellectuelle</h2>
-<p>L'ensemble des contenus présents sur le site forcedouceur.com (textes, images, visuels, logo) sont la propriété exclusive de Force & Douceur. Toute reproduction, même partielle, est interdite sans autorisation préalable.</p>
-<h2>Données personnelles</h2>
-<p>Les données collectées via les formulaires du site (email, prénom) sont utilisées uniquement pour vous contacter et vous envoyer des ressources PMA. Elles ne sont jamais vendues à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de modification et de suppression de vos données. Pour exercer ce droit : contact@forcedouceur.com</p>
-<h2>Cookies</h2>
-<p>Ce site utilise des cookies techniques nécessaires à son fonctionnement. Aucun cookie publicitaire n'est utilisé.</p>
+
+<nav class="nav">
+  <a href="/" class="logo">Force <span>&</span> Douceur</a>
+  <a href="/" class="back">← Retour au site</a>
+</nav>
+
+<div class="hero">
+  <h1>Politique de confidentialité</h1>
+  <p>Tes données t'appartiennent. Voici exactement ce qu'on collecte, pourquoi, et comment te les supprimer.</p>
 </div>
+
+<div class="container">
+
+  <div class="update">
+    📅 Dernière mise à jour : Mai 2026 — Applicable à forcedouceur.com et app.forcedouceur.com
+  </div>
+
+  <!-- QUI SOMMES-NOUS -->
+  <div class="section">
+    <div class="tag">Éditeur</div>
+    <h2>Qui sommes-nous ?</h2>
+    <p><strong>Force & Douceur</strong> est une application de bien-être émotionnel pour les femmes en parcours PMA, créée et éditée par :</p>
+    <ul>
+      <li><strong>Responsable :</strong> Kris DAMAYANTI</li>
+      <li><strong>Statut :</strong> Entrepreneur Individuel (EI)</li>
+      <li><strong>Ville :</strong> Aubagne — Région PACA</li>
+      <li><strong>Email :</strong> krisdam.pro@gmail.com</li>
+      <li><strong>Sites :</strong> forcedouceur.com · app.forcedouceur.com</li>
+    </ul>
+    <div class="highlight">
+      <strong>Important :</strong> Force & Douceur est une application de bien-être émotionnel — pas une application médicale. Elle ne remplace pas un professionnel de santé.
+    </div>
+  </div>
+
+  <!-- DONNÉES COLLECTÉES -->
+  <div class="section">
+    <div class="tag">Données</div>
+    <h2>Quelles données collectons-nous ?</h2>
+
+    <p><strong>Ce que tu nous donnes volontairement :</strong></p>
+    <ul>
+      <li>Ton <strong>prénom</strong> (optionnel) — pour personnaliser ton expérience</li>
+      <li>Ton <strong>adresse email</strong> — pour t'envoyer des informations sur la plateforme</li>
+      <li>Ton <strong>étape de parcours PMA</strong> — pour adapter le soutien proposé</li>
+    </ul>
+
+    <p><strong>Ce que nous ne collectons PAS :</strong></p>
+    <ul>
+      <li>❌ Résultats d'examens médicaux</li>
+      <li>❌ Données biologiques ou hormonales</li>
+      <li>❌ Conversations avec l'IA — elles disparaissent quand tu fermes l'app</li>
+      <li>❌ Données de localisation précise</li>
+      <li>❌ Données bancaires</li>
+    </ul>
+
+    <div class="highlight">
+      <strong>Tes conversations avec l'IA sont privées.</strong> Elles ne sont jamais sauvegardées sur nos serveurs. Chaque session repart de zéro.
+    </div>
+  </div>
+
+  <!-- POURQUOI ON COLLECTE -->
+  <div class="section">
+    <div class="tag">Finalité</div>
+    <h2>Pourquoi collectons-nous ces données ?</h2>
+    <ul>
+      <li>📧 <strong>Email :</strong> pour t'informer des nouvelles fonctionnalités et du lancement de l'app</li>
+      <li>🌸 <strong>Étape parcours :</strong> pour personnaliser ton expérience dans l'app</li>
+      <li>📝 <strong>Journal :</strong> pour sauvegarder tes entrées de journal personnel dans ton espace sécurisé</li>
+    </ul>
+    <p>Nous n'utilisons pas tes données à des fins publicitaires. Force & Douceur ne vend jamais tes données à des tiers.</p>
+  </div>
+
+  <!-- INTELLIGENCE ARTIFICIELLE -->
+  <div class="section">
+    <div class="tag">IA & Gemini</div>
+    <h2>L'intelligence artificielle et tes données</h2>
+    <p>Le chat de soutien émotionnel utilise <strong>l'API Google Gemini</strong> pour générer les réponses.</p>
+
+    <div class="alert">
+      <strong>⚠️ Ce que cela signifie :</strong> Tes messages sont transmis à Google pour générer une réponse. Google applique sa propre politique de confidentialité à ces échanges.
+    </div>
+
+    <p><strong>Ce que nous faisons pour te protéger :</strong></p>
+    <ul>
+      <li>Les conversations ne sont jamais sauvegardées dans notre base de données</li>
+      <li>L'IA est configurée pour ne jamais stocker d'informations médicales sensibles</li>
+      <li>Chaque session repart de zéro — aucun historique conservé</li>
+    </ul>
+
+    <p>Pour consulter la politique de confidentialité de Google : <strong>policies.google.com</strong></p>
+
+    <div class="highlight">
+      <strong>Conseil :</strong> Ne partage jamais de données médicales confidentielles (résultats, ordonnances, données biologiques) dans le chat IA.
+    </div>
+  </div>
+
+  <!-- BASE DE DONNÉES -->
+  <div class="section">
+    <div class="tag">Hébergement</div>
+    <h2>Où sont stockées tes données ?</h2>
+    <ul>
+      <li><strong>Base de données :</strong> Supabase (hébergement eu-west-1 — Irlande, Union Européenne)</li>
+      <li><strong>Application :</strong> Vercel (infrastructure mondiale, conforme RGPD)</li>
+      <li><strong>IA :</strong> Google Gemini API (politique Google applicable)</li>
+    </ul>
+    <p>Toutes nos données sont hébergées dans l'Union Européenne ou chez des prestataires conformes au RGPD.</p>
+  </div>
+
+  <!-- TES DROITS -->
+  <div class="section">
+    <div class="tag">Tes droits</div>
+    <h2>Tes droits RGPD</h2>
+    <p>Conformément au Règlement Général sur la Protection des Données (RGPD), tu disposes des droits suivants :</p>
+    <ul>
+      <li>✅ <strong>Droit d'accès :</strong> savoir quelles données on a sur toi</li>
+      <li>✅ <strong>Droit de rectification :</strong> corriger tes données</li>
+      <li>✅ <strong>Droit à l'effacement :</strong> supprimer toutes tes données</li>
+      <li>✅ <strong>Droit d'opposition :</strong> refuser l'utilisation de tes données</li>
+      <li>✅ <strong>Droit à la portabilité :</strong> récupérer tes données dans un format standard</li>
+    </ul>
+    <p>Pour exercer ces droits, envoie un email à <strong>krisdam.pro@gmail.com</strong> avec l'objet "RGPD — [ton prénom]". Réponse sous 30 jours.</p>
+  </div>
+
+  <!-- DURÉE DE CONSERVATION -->
+  <div class="section">
+    <div class="tag">Conservation</div>
+    <h2>Combien de temps gardons-nous tes données ?</h2>
+    <ul>
+      <li><strong>Email + prénom :</strong> jusqu'à ta désinscription ou 2 ans d'inactivité</li>
+      <li><strong>Journal personnel :</strong> jusqu'à ta demande de suppression</li>
+      <li><strong>Conversations IA :</strong> jamais conservées</li>
+    </ul>
+    <p>Tu peux demander la suppression de toutes tes données à tout moment en écrivant à krisdam.pro@gmail.com</p>
+  </div>
+
+  <!-- COOKIES -->
+  <div class="section">
+    <div class="tag">Cookies</div>
+    <h2>Cookies et stockage local</h2>
+    <p>Force & Douceur utilise uniquement le <strong>localStorage</strong> de ton navigateur pour :</p>
+    <ul>
+      <li>Mémoriser ton étape de parcours PMA (pour ne pas répéter l'onboarding)</li>
+      <li>Mémoriser ton prénom pour personnaliser l'affichage</li>
+    </ul>
+    <p>Ces données restent sur ton appareil et ne sont jamais transmises à nos serveurs. Tu peux les supprimer en vidant le cache de ton navigateur.</p>
+    <p>Nous n'utilisons <strong>aucun cookie publicitaire ou de tracking</strong>.</p>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="contact-box">
+    <h3>Une question sur tes données ?</h3>
+    <p>Je réponds personnellement à chaque demande sous 30 jours.</p>
+    <a href="mailto:krisdam.pro@gmail.com?subject=RGPD - Mes données">📧 krisdam.pro@gmail.com</a>
+  </div>
+
+</div>
+
+<footer class="footer">
+  © 2026 Force & Douceur — Kris DAMAYANTI — Aubagne
+  · <a href="/" style="color:var(--rose)">Retour au site</a>
+  · <a href="/mentions-legales" style="color:var(--rose)">Mentions légales</a>
+</footer>
+
 </body>
 </html>
